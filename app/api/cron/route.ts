@@ -6,7 +6,7 @@ import { scrapeAmazonProduct } from "@/lib/scrapper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 import { getEmailNotifType, getAveragePrice, getHighestPrice, getLowestPrice } from "@/lib/utils/global";
 
-export const maxDuration = 300; // This function can run for a maximum of 300 seconds
+export const maxDuration = 60; // This function can run for a maximum of 300 seconds, for free vercel accont maximum is 60 seconds
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
