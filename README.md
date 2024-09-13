@@ -58,11 +58,14 @@ npm install mongoose --legacy-peer-deps
 npm install @headlessui/react --legacy-peer-deps
 
 # 3:15:23 install nodemailer https://nodemailer.com/ - sending emails package
+
 npm install nodemailer --legacy-peer-deps
 npm install --save-dev @types/nodemailer --legacy-peer-deps
 
 # 3:47:01 github and deployement
+
 # open terminal
+
 git init
 git add .
 git commit -m "first commit"
@@ -70,3 +73,10 @@ git branch -M main
 git remote add origin https://github.com/lead1974/pricewise.git
 git push -u origin main
 
+# fixing dependencies to compile
+
+npm install eslint@^8.0.0 eslint-config-next@latest --save-dev
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+npm dedupe
