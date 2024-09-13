@@ -80,3 +80,5 @@ npm cache clean --force
 rm -rf node_modules package-lock.json
 npm install
 npm dedupe
+
+# 3:53:45 --> how to setup cron job on vercel OR better cron-job.org
